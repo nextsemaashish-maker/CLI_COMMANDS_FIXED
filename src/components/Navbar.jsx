@@ -70,31 +70,7 @@ export default function Navbar({
     >
       {/* Brand & Mobile Curriculum Toggle */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
-        {/* Mobile Menu Button (Shows on mobile when on Lessons tab to open Curriculum Drawer) */}
-        {activeTab === 'lessons' && onToggleMobileDrawer && (
-          <button
-            onClick={onToggleMobileDrawer}
-            className="mobile-only-drawer-btn"
-            style={{
-              padding: '6px 8px',
-              background: isMobileDrawerOpen ? 'rgba(16, 185, 129, 0.25)' : 'rgba(255, 255, 255, 0.06)',
-              border: '1px solid rgba(16, 185, 129, 0.4)',
-              borderRadius: '8px',
-              color: '#00ff88',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '4px'
-            }}
-            title="Toggle Curriculum Drawer"
-          >
-            {isMobileDrawerOpen ? <X size={18} /> : <Menu size={18} />}
-            <span style={{ fontSize: '0.72rem', fontFamily: 'var(--font-mono)', fontWeight: 700 }}>
-              Curriculum
-            </span>
-          </button>
-        )}
+
 
         {/* Brand Logo & Name */}
         <div
